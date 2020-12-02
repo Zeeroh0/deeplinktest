@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep Link Test</title>
+</head>
+<body>
+  <button id="sws-link" >SWS Deep Link</button>
+  <script>
+    document.getElementById('sws-link').addEventListener('click', () => {
+      console.log('Clicked the sws-link button');
+      window.location.href='swsapp://abcd';
+    });
+  </script>
+</body>
+</html>
