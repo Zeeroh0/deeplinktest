@@ -6,11 +6,22 @@
   <title>Deep Link Test</title>
 </head>
 <body>
-  <button id="sws-link" >SWS Deep Link</button>
+  <button id="sws-link1" >ProductDetail?productId=123</button>
+  <button id="sws-link2" >brandId=122</button>
+  <button id="sws-link3" >Category?categoryId=25</button>
+
   <script>
-    document.getElementById('sws-link').addEventListener('click', () => {
+    document.getElementById('sws-link1').addEventListener('click', () => {
       console.log('Clicked the sws-link button');
-      window.location.href='swsapp://abcd';
+      window.location.href='swsapp://ProductDetail?productId=123';
+    });
+    document.getElementById('sws-link2').addEventListener('click', () => {
+      console.log('Clicked the sws-link button');
+      window.location.href='swsapp://brandId=122';
+    });
+    document.getElementById('sws-link3').addEventListener('click', () => {
+      console.log('Clicked the sws-link button');
+      window.location.href='swsapp://Category?categoryId=25';
     });
   </script>
 </body>
