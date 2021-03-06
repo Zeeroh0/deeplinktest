@@ -7,7 +7,7 @@
 </head>
 <body>
   <button id="sws-link1" >ProductDetail?productId=123</button>
-  <button id="sws-link2" >brandId=122</button>
+<!--   <button id="sws-link2" >brandId=122</button> -->
   <button id="sws-link3" >Category?categoryId=25</button>
 
   <script>
@@ -15,10 +15,10 @@
       console.log('Clicked the sws-link button');
       window.location.href='swsapp://ProductDetail?productId=123';
     });
-    document.getElementById('sws-link2').addEventListener('click', () => {
-      console.log('Clicked the sws-link button');
-      window.location.href='swsapp://brandId=122';
-    });
+//     document.getElementById('sws-link2').addEventListener('click', () => {
+//       console.log('Clicked the sws-link button');
+//       window.location.href='swsapp://brandId=122';
+//     });
     document.getElementById('sws-link3').addEventListener('click', () => {
       console.log('Clicked the sws-link button');
       window.location.href='swsapp://Category?categoryId=25';
